@@ -15,7 +15,7 @@ int main(){
 
 int yes = 1, no = 0;
 for (int i = 1; i < n - 1; i++){
-if (number[n] > number[n - 1]){
+if (number[n] > number[n + 1]){
 no = 0;
   }
 }
