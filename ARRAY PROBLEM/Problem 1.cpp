@@ -9,14 +9,14 @@ int main(){
 
  int number[n];
  cout << "Enter elements: ";
- for (int i = 0; i < n ; n++){
- cin >> number[n];
+ for (int i = 0; i < n ; i++){
+ cin >> number[i];
  }
 
-int yes = 1, no = 0;
-for (int i = 1; i < n - 1; i++){
+int yes = 1;
+for (int i = 0; i < n - 1; i++){
 if (number[i] > number[i + 1]){
-no = 0;
+yes = 0;
   }
 }
 
