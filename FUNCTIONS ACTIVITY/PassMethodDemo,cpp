@@ -20,7 +20,7 @@ int main() {
     passByValue(a);
     cout << "After passByValue(): a = " << a << endl;
     
-    cout << "\n Before passByReference(): b = " << b << endl;
+    cout << "\nBefore passByReference(): b = " << b << endl;
     passByReference(b);
     cout << "After passByReference(): b = " << b << endl;
     
