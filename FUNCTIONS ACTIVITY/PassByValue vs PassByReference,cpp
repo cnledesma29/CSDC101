@@ -1,0 +1,29 @@
+
+#include <iostream>
+using namespace std;
+ 
+ void passByValue(int a) {
+     a = a + 10;
+     cout << "Inside passByValue(): a = " << a << endl;
+ }
+
+  void passByReference(int &b) {
+      b = b + 10;
+      cout << "Inside the passByReference(): b = " << b << endl;
+}
+
+int main() {
+    int a = 5;
+    int b = 5;
+    
+    cout << "Before passByValue(): a = " << a << endl;
+    passByValue(a);
+    cout << "After passByValue(): a = " << a << endl;
+    
+    cout << "\n Before passByReference(): b = " << b << endl;
+    passByReference(b);
+    cout << "After passByReference(): b = " << b << endl;
+    
+
+    return 0;
+}
